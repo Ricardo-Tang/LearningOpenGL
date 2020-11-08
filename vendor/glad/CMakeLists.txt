@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.0.0)
+project(Glad)
+file(GLOB GLAD_SOURCE_FILES src/*.c)
+file(GLOB GLAD_HEADER_FILES include/*/*.h)
+include_directories(include)
+add_library(Glad STATIC ${GLAD_SOURCE_FILES} ${GLAD_HEADER_FILES})
